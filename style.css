@@ -1,0 +1,76 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --main-color: #FFC078
+}
+
+/*
+/////////////////////////////
+//////// I N F O ///////////
+///////////////////////////
+
+ - Primary-Color : #FFC078
+ - Secondary-Color: 
+
+
+
+*/
+
+/**/
+
+/*----------PRINCIPAL PAGE ----------*/
+.home-page {
+  max-width: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  background-image: linear-gradient(black, rgba(44, 44, 44, 0.63))
+}
+.menu-list-nav {
+  margin-top:2rem ;
+  display: flex;
+  gap: 2.5rem;
+}
+.nav-handle:link, .nav-handle:visited {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.background-image {
+  max-width: 100%;
+  min-height: 13%;
+}
+.title-in-home {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--main-color);
+  border-top: 0.1rem solid var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+}
+.paragraph-home {
+  border: 0.1rem solid var(--main-color);
+  border-style:groove;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+

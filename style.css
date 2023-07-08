@@ -77,6 +77,8 @@ h2 {
   align-items: flex-start;
 }
 
+/*============= FIRST PRODUCT======================*/
+
 .box-orange-one {
   height: 24vh;
   margin-top: 2rem;
@@ -98,7 +100,7 @@ h2 {
 
 .btn-product {
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 1s;
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
@@ -110,7 +112,8 @@ h2 {
 }
 .btn-product:hover{
   background-color: #000000;
-  color: var(--main-color)
+  color: var(--main-color);
+  transform: translate(-1.3rem, -0.5rem);
 }
 
 .price-one {
@@ -121,7 +124,6 @@ h2 {
   font-family:serif;
   font-size: 1.5rem;
   transform: translate(-1.3rem,0.5rem);
-
 }
 .description {
   display: flex;
@@ -131,9 +133,53 @@ h2 {
 }
 
 
+/*============= SECOND  PRODUCT======================*/
 
+.box-orange-two {
+  margin: 3rem 1rem 0 1rem;
+  display: flex;
+  text-align: center;
+  height: 15vh;
+  background-color: var(--main-color);
 
-
-
-
-
+}
+.img-product-two {
+  height: 28vh;
+  max-width: 20vh;
+  margin-left: 1rem;
+  transform: translate(0rem,-1.5rem);
+}
+.description-product-two {
+  font-size: 1.1rem;
+}
+.container-product-two {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70%;
+}
+.price-two {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--main-color);
+  margin: 0.5rem 0 ;
+  font-family:serif;
+  font-size: 1.5rem;
+  transform: translate(-1.3rem,0.5rem);
+}
+.btn-product-two {
+  cursor: pointer;
+  transition: all 1s;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translate(-1.3rem,0.6rem);
+  padding: 0.5rem 1.7rem;
+  border-radius: 1px;
+  border: none;
+  background-color: var(--main-color);
+}
+.btn-product-two:hover{
+  background-color: #000000;
+  color: var(--main-color);
+  transform: translate(-1.3rem, 0.9rem);
+}

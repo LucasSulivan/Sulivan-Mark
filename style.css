@@ -390,8 +390,22 @@ h2 {
 }
 
 /*###################################*/
-/*######## T A B L E T ##############*/
+/*SUPPORT FOR LARGE MOBILE AND TABLETS*/
 /*###################################*/
+
+/*------------438px------------------*/
+
+@media screen and (min-width:438px) {
+  .img-product-one {
+    transform: translate(-2rem,7rem);
+    width: 52%;
+  }
+  .menu-list-nav {
+    gap: 10vh;
+  }
+}
+
+/*-----------510px------------------------*/
 
 @media screen and (min-width:510px) {
   body{
@@ -405,8 +419,16 @@ h2 {
   }
 
   .img-product-one {
-    transform: translate(5rem,7rem);
-    width: 36%;
+    transform: translate(-2rem,8rem);
+    width: 47%;
   }
+}
 
+/*--------------675px-----------------------*/
+
+@media screen and (min-width:675px) {
+  .img-product-one {
+    transform: translate(0rem,8rem);
+    width: 40%;
+  }
 }

@@ -190,8 +190,9 @@ h2 {
 /*-----------REGISTER PAGE--------------------*/
 
 .register-page {
-  margin: 12vh 0 ;
-  padding-top: 1rem;
+    margin-top: 12vh 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0))
 }
 
@@ -227,6 +228,13 @@ h2 {
 .btn-form:hover {
   background-color: #000000;
   color: #ff922b;
-  transform: translate(0rem,1rem);
+  transform: translate(0rem,0.5rem);
   transition: all 0.8s ;
+}
+
+/*----------------FOOTER--------------------*/
+.footer {
+  font-size: 0.7rem;
+  color: var(--main-color);
+  background-color: black;
 }

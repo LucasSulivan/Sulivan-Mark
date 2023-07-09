@@ -9,19 +9,9 @@
   --secondary-color: #ff922b
 }
 
-/*
-/////////////////////////////
-//////// I N F O ///////////
-///////////////////////////
-
- - Primary-Color : #FFC078
- - Secondary-Color: 
-
-
-
-*/
-
-/**/
+/*###################################*/
+/*######## M O B I L E ##############*/
+/*###################################*/
 
 /*----------PRINCIPAL PAGE ----------*/
 h2 {
@@ -35,17 +25,57 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   gap: 3rem;
-  /*background-image: linear-gradient(black, rgb(255, 255, 255))*/
   background-color: #121213;
 }
 .menu-list-nav {
   margin-top:2rem ;
   display: flex;
-  gap: 2.5rem;
+  gap: 2.6rem;
 }
-.nav-handle:link, .nav-handle:visited {
+
+.nav-handle {
   text-decoration: none;
   color: var(--main-color);
+  transition: all 0.3s;
+  position: relative;
+}
+.nav-handle span {
+  transition: all 0.3s;
+}
+.nav-handle::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transform: scale(0.1, 1);
+}
+.nav-handle:hover span {
+  letter-spacing: 2px;
+}
+.nav-handle:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.nav-handle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.nav-handle:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
 
 .background-image {
@@ -84,7 +114,6 @@ h2 {
 
 .box-orange-one {
   height: 24vh;
-  margin-top: 2rem;
   display: flex;
   align-items: center;
   background-color: var(--main-color);
@@ -102,21 +131,62 @@ h2 {
 }
 
 .btn-product {
+  height: 2rem;
+  width: 6rem;
+  position: relative;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
   transform: translate(-1.3rem,-1rem);
-  padding: 0.5rem 1.7rem;
   border-radius: 1px;
   border: none;
-  background-color: var(--main-color);
+  background-color:#ffc078;
 }
-.btn-product:hover{
-  background-color: #000000;
-  color: #ff922b;
-  transform: translate(-1.3rem, -0.5rem);
+
+.btn-product span {
+  transition: all 0.3s;
+}
+
+.btn-product::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid white;
+  transform: scale(0.1, 1);
+}
+
+.btn-product:hover span {
+  letter-spacing: 2px;
+}
+
+.btn-product:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+
+.btn-product::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(65, 65, 65, 0);
+}
+
+.btn-product:hover::after {
+  opacity: 0; 
+  transform: scale(0.1,1);
 }
 
 .price-one {
@@ -128,6 +198,7 @@ h2 {
   font-size: 1.5rem;
   transform: translate(-1.3rem,0.5rem);
 }
+
 .description {
   display: flex;
   flex-direction: column;
@@ -139,7 +210,8 @@ h2 {
 /*============= SECOND  PRODUCT======================*/
 
 .box-orange-two {
-  margin: 3rem 1rem 0 1rem;
+  width: 100%;
+  margin: 9rem 0rem 0 0rem;
   display: flex;
   text-align: center;
   height: 15vh;
@@ -169,22 +241,59 @@ h2 {
   font-size: 1.5rem;
   transform: translate(-1.3rem,0.5rem);
 }
+
 .btn-product-two {
+  height: 2rem;
+  width: 6rem;
+  position: relative;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
   transform: translate(-1.3rem,0.6rem);
-  padding: 0.5rem 1.7rem;
   border-radius: 1px;
   border: none;
-  background-color: var(--main-color);
+  background-color: #ffc078;
 }
-.btn-product-two:hover{
-  background-color: #000000;
-  color: #ff922b;
-  transform: translate(-1.3rem, 0.9rem);
+.btn-product-two::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.658);
+  transform: scale(0.1, 1);
+}
+
+.btn-product-two:hover span {
+  letter-spacing: 2px;
+}
+
+.btn-product-two:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+
+.btn-product-two::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(65, 65, 65, 0);
+}
+
+.btn-product-two:hover::after {
+  opacity: 0; 
+  transform: scale(0.1,1);
 }
 
 /*-----------REGISTER PAGE--------------------*/
@@ -218,18 +327,59 @@ h2 {
   box-sizing: border-box;
 }
 .btn-form {
+  color: white;
+  cursor: pointer;
+  line-height: 4rem;
+  height: 4rem;
+  text-align: center;
+  position: relative;
   font-weight: 300;
   margin: 1rem 0;
   font-size: 1.6rem;
   border-radius: 0.2rem;
-  background-color: var(--main-color);
+  background-color: rgba(0, 0, 0, 0.096);
   border: none;
+  
 }
-.btn-form:hover {
-  background-color: #000000;
-  color: #ff922b;
-  transform: translate(0rem,0.5rem);
-  transition: all 0.8s ;
+.btn-form span {
+  transition: all 0.3s;
+}
+.btn-form:hover span {
+  letter-spacing: 3px;
+}
+
+.btn-form::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transform: scale(0.1,1);
+}
+.btn-form:hover::before {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+.btn-form::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-form:hover::after {
+  opacity: 0;
+  transform: scale(0.1,1);
 }
 
 /*----------------FOOTER--------------------*/
@@ -237,4 +387,26 @@ h2 {
   font-size: 0.7rem;
   color: var(--main-color);
   background-color: black;
+}
+
+/*###################################*/
+/*######## T A B L E T ##############*/
+/*###################################*/
+
+@media screen and (min-width:510px) {
+  body{
+    max-width: 100vh;
+  }
+  .menu-list-nav {
+    gap: 17vh;
+  }
+  .home-page {
+    min-height: 106vh;
+  }
+
+  .img-product-one {
+    transform: translate(5rem,7rem);
+    width: 36%;
+  }
+
 }
